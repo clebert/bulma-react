@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": ["DOM", "ES2019"],
+    "lib": ["DOM", "ES2017"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "noFallthroughCasesInSwitch": true,
@@ -15,7 +15,7 @@
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
-    "target": "ES2019"
+    "target": "ES2017"
   },
   "include": ["src/**/*"]
 }

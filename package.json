@@ -12,11 +12,16 @@
   "license": "MIT",
   "author": "Clemens Akens <clebert@me.com>",
   "sideEffects": false,
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "tsc --incremental --pretty",
+    "build": "run-p build:*",
+    "build:cjs": "tsc --project tsconfig.cjs.json --incremental --pretty",
+    "build:esm": "tsc --project tsconfig.esm.json --incremental --pretty",
     "ci": "run-p format:test lint build",
     "format": "prettier --write '**/*.{html,js,json,md,ts,tsx,yml}'",
     "format:test": "prettier --list-different '**/*.{html,js,json,md,ts,tsx,yml}'",

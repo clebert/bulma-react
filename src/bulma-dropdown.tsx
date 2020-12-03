@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import React from 'react';
+import * as React from 'react';
 
 export interface BulmaDropdownProps {
   readonly children: React.ReactNode;
