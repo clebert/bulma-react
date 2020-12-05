@@ -41,9 +41,9 @@ npm install @clebert/bulma-react --save
 ```
 
 ```js
+import {BulmaTitle} from '@clebert/bulma-react';
 import * as React from 'react';
 import {render} from 'react-dom';
-import {BulmaTitle} from '@clebert/bulma-react/lib/bulma-title';
 
 render(
   <BulmaTitle color="info" size="1">
